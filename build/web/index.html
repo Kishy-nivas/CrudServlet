@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<link rel ="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/superhero/bootstrap.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<body>
+
+
+<div class ="container"> 
+    <div class="jumbotron text-center">Employee management system in JSP </div>
+    <form action="SaveServlet" method="post">
+    <div class="table-responsive">
+      <table class="table">
+        <tr><td>Name:</td><td><input type="text" name="name"/></td></tr>
+    <tr><td>Password:</td><td><input type="password" name="password"/></td></tr>
+    <tr><td>Email:</td><td><input type="email" name="email"/></td></tr>
+    <tr><td>Country:</td><td>
+    <select name="country" style="width:150px">
+    <option>India</option>
+    <option>USA</option>
+    <option>UK</option>
+    <option>Other</option>
+    </select>
+    </td></tr>
+    <tr><td colspan="2"><input type="submit" value="Save Employee" class ='btn btn-primary'/></td></tr>
+
+      </table>
+    </div>
+
+    </form>
+    <a href="ViewServlet" class="btn btn-primary">view employees</a>
+</div> 
+<br/>
+
+
+</body>
+</html>
